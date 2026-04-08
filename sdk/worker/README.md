@@ -1,18 +1,18 @@
-# @aikirun/worker
+# @syi0808/worker
 
 Worker SDK for Aiki durable execution platform.
 
 ## Installation
 
 ```bash
-npm install @aikirun/worker
+npm install @syi0808/worker
 ```
 
 ## Quick Start
 
 ```typescript
-import { worker } from "@aikirun/worker";
-import { client } from "@aikirun/client";
+import { worker } from "@syi0808/worker";
+import { client } from "@syi0808/client";
 import { orderWorkflowV1 } from "./workflows.ts";
 
 const aikiClient = client({
@@ -40,7 +40,7 @@ process.on("SIGTERM", async () => {
 - **Heartbeat Monitoring** - Detect and recover stuck workflows
 - **Graceful Shutdown** - Complete active work before stopping
 - **Sharding** - Route workflows to specific workers
-- **Pluggable Subscribers** - Swap work discovery transport (DB polling default, Redis Streams via `@aikirun/redis`, or bring your own)
+- **Pluggable Subscribers** - Swap work discovery transport (DB polling default, Redis Streams via `@syi0808/redis`, or bring your own)
 
 ## Documentation
 
@@ -48,8 +48,8 @@ For comprehensive documentation including scaling strategies, configuration opti
 
 ## Related Packages
 
-- [@aikirun/client](https://www.npmjs.com/package/@aikirun/client) - Connect to Aiki server
-- [@aikirun/workflow](https://www.npmjs.com/package/@aikirun/workflow) - Define workflows and tasks
+- [@syi0808/client](https://www.npmjs.com/package/@syi0808/client) - Connect to Aiki server
+- [@syi0808/workflow](https://www.npmjs.com/package/@syi0808/workflow) - Define workflows and tasks
 
 ## License
 

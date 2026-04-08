@@ -1,10 +1,10 @@
-import { isNonEmptyArray } from "@aikirun/lib/array";
+import { isNonEmptyArray } from "@syi0808/lib/array";
 import type {
 	WorkflowGetStatsRequestV1,
 	WorkflowListRequestV1,
 	WorkflowListVersionsRequestV1,
-} from "@aikirun/types/workflow-api";
-import type { WorkflowRunStatus } from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-api";
+import type { WorkflowRunStatus } from "@syi0808/types/workflow-run";
 import type { Repositories } from "server/infra/db/types";
 import type { NamespaceRequestContext } from "server/middleware/context";
 import { decodeTime } from "ulidx";

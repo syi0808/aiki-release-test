@@ -1,6 +1,6 @@
-import { isNonEmptyArray } from "@aikirun/lib/array";
-import type { WorkflowRunId } from "@aikirun/types/workflow-run";
-import type { WorkflowRunClaimReadyRequestV1 } from "@aikirun/types/workflow-run-api";
+import { isNonEmptyArray } from "@syi0808/lib/array";
+import type { WorkflowRunId } from "@syi0808/types/workflow-run";
+import type { WorkflowRunClaimReadyRequestV1 } from "@syi0808/types/workflow-run-api";
 import type { Repositories } from "server/infra/db/types";
 import type { NamespaceRequestContext } from "server/middleware/context";
 

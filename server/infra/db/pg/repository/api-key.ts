@@ -1,4 +1,4 @@
-import type { NamespaceId } from "@aikirun/types/namespace";
+import type { NamespaceId } from "@syi0808/types/namespace";
 import { and, eq } from "drizzle-orm";
 
 import type { PgDb } from "../provider";

@@ -1,4 +1,4 @@
-# @aikirun/types
+# @syi0808/types
 
 Core type definitions for Aiki durable execution platform.
 
@@ -8,7 +8,7 @@ directly, but imported by other Aiki packages.
 ## Installation
 
 ```bash
-npm install @aikirun/types
+npm install @syi0808/types
 ```
 
 ## Exports
@@ -32,15 +32,15 @@ npm install @aikirun/types
 These types are primarily used by other Aiki packages:
 
 ```typescript
-import type { WorkflowOptions } from "@aikirun/types/workflow-run";
-import type { TriggerStrategy } from "@aikirun/types/trigger";
+import type { WorkflowOptions } from "@syi0808/types/workflow-run";
+import type { TriggerStrategy } from "@syi0808/types/trigger";
 ```
 
 ## Related Packages
 
-- [@aikirun/client](https://www.npmjs.com/package/@aikirun/client) - Client SDK
-- [@aikirun/workflow](https://www.npmjs.com/package/@aikirun/workflow) - Workflow and Task SDK
-- [@aikirun/worker](https://www.npmjs.com/package/@aikirun/worker) - Worker SDK
+- [@syi0808/client](https://www.npmjs.com/package/@syi0808/client) - Client SDK
+- [@syi0808/workflow](https://www.npmjs.com/package/@syi0808/workflow) - Workflow and Task SDK
+- [@syi0808/worker](https://www.npmjs.com/package/@syi0808/worker) - Worker SDK
 
 ## Changelog
 

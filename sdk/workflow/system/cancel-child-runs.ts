@@ -1,6 +1,6 @@
-import { isNonEmptyArray } from "@aikirun/lib/array";
-import type { ApiClient } from "@aikirun/types/client";
-import { NON_TERMINAL_WORKFLOW_RUN_STATUSES } from "@aikirun/types/workflow-run";
+import { isNonEmptyArray } from "@syi0808/lib/array";
+import type { ApiClient } from "@syi0808/types/client";
+import { NON_TERMINAL_WORKFLOW_RUN_STATUSES } from "@syi0808/types/workflow-run";
 
 import { task } from "../task";
 import { workflow } from "../workflow";

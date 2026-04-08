@@ -1,10 +1,10 @@
-import type { ScheduleListRequestV1 } from "@aikirun/types/schedule-api";
+import type { ScheduleListRequestV1 } from "@syi0808/types/schedule-api";
 import type {
 	WorkflowGetStatsRequestV1,
 	WorkflowListRequestV1,
 	WorkflowListVersionsRequestV1,
-} from "@aikirun/types/workflow-api";
-import type { WorkflowRunListRequestV1, WorkflowRunListTransitionsRequestV1 } from "@aikirun/types/workflow-run-api";
+} from "@syi0808/types/workflow-api";
+import type { WorkflowRunListRequestV1, WorkflowRunListTransitionsRequestV1 } from "@syi0808/types/workflow-run-api";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 
 import { client } from "./client";

@@ -1,10 +1,10 @@
 import { dirname, join } from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
-import { client } from "@aikirun/client";
-import type { Client } from "@aikirun/types/client";
-import { worker } from "@aikirun/worker";
-import type { AnyWorkflowVersion } from "@aikirun/workflow";
+import { client } from "@syi0808/client";
+import type { Client } from "@syi0808/types/client";
+import { worker } from "@syi0808/worker";
+import type { AnyWorkflowVersion } from "@syi0808/workflow";
 import { config } from "dotenv";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));

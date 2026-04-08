@@ -1,4 +1,4 @@
-import { event, task, workflow } from "@aikirun/workflow";
+import { event, task, workflow } from "@syi0808/workflow";
 
 /**
  * CAM Divergence Test Workflows

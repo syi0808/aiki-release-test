@@ -1,4 +1,4 @@
-import type { ScheduleStatus } from "@aikirun/types/schedule";
+import type { ScheduleStatus } from "@syi0808/types/schedule";
 
 import { SCHEDULE_STATUS_COLORS } from "./status-colors";
 

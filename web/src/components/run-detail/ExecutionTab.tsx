@@ -1,12 +1,12 @@
-import type { EventWaitQueue } from "@aikirun/types/event";
-import type { SleepQueue } from "@aikirun/types/sleep";
-import type { TaskInfo } from "@aikirun/types/task";
+import type { EventWaitQueue } from "@syi0808/types/event";
+import type { SleepQueue } from "@syi0808/types/sleep";
+import type { TaskInfo } from "@syi0808/types/task";
 import type {
 	ChildWorkflowRunInfo,
 	ChildWorkflowRunWaitCompleted,
 	TerminalWorkflowRunStatus,
 	WorkflowRun,
-} from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-run";
 import { memo, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 

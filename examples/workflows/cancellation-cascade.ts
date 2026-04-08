@@ -1,4 +1,4 @@
-import { workflow } from "@aikirun/workflow";
+import { workflow } from "@syi0808/workflow";
 
 /**
  * Demonstrates cancellation cascading through a 3-level hierarchy.

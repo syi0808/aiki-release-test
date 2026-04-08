@@ -16,7 +16,7 @@ This workflow spans hours or days and coordinates multiple humans—exactly what
 Each task is an independent unit of work that can be retried separately:
 
 ```typescript
-import { task } from "@aikirun/workflow";
+import { task } from "@syi0808/workflow";
 
 const notifyRestaurant = task({
 	name: "notify-restaurant",
@@ -53,7 +53,7 @@ const sendFeedbackEmail = task({
 The courier delivery is a child workflow; a separate workflow that runs independently:
 
 ```typescript
-import { event, workflow } from "@aikirun/workflow";
+import { event, workflow } from "@syi0808/workflow";
 
 const courierDelivery = workflow({ name: "courier-delivery" });
 
@@ -159,8 +159,8 @@ Create the client and worker:
 
 ```typescript
 import process from "node:process";
-import { client } from "@aikirun/client";
-import { worker } from "@aikirun/worker";
+import { client } from "@syi0808/client";
+import { worker } from "@syi0808/worker";
 
 const aikiClient = client({
 	url: "http://localhost:9850",

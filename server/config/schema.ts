@@ -1,4 +1,4 @@
-import type { Equal, ExpectTrue } from "@aikirun/lib/testing/expect";
+import type { Equal, ExpectTrue } from "@syi0808/lib/testing/expect";
 import { type } from "arktype";
 import { logLevels } from "server/infra/logger";
 

@@ -1,5 +1,5 @@
-import type { NonEmptyArray } from "@aikirun/lib/array";
-import type { NamespaceId } from "@aikirun/types/namespace";
+import type { NonEmptyArray } from "@syi0808/lib/array";
+import type { NamespaceId } from "@syi0808/types/namespace";
 import { and, count, eq, getTableColumns, inArray, lte, sql } from "drizzle-orm";
 
 import type { PgDb } from "../provider";

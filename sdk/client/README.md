@@ -1,17 +1,17 @@
-# @aikirun/client
+# @syi0808/client
 
 Client SDK for Aiki durable execution platform.
 
 ## Installation
 
 ```bash
-npm install @aikirun/client
+npm install @syi0808/client
 ```
 
 ## Quick Start
 
 ```typescript
-import { client } from "@aikirun/client";
+import { client } from "@syi0808/client";
 import { orderWorkflowV1 } from "./workflows.ts";
 
 const aikiClient = client({
@@ -41,8 +41,8 @@ For comprehensive documentation including configuration options and context inje
 
 ## Related Packages
 
-- [@aikirun/workflow](https://www.npmjs.com/package/@aikirun/workflow) - Define workflows and tasks
-- [@aikirun/worker](https://www.npmjs.com/package/@aikirun/worker) - Execute workflows
+- [@syi0808/workflow](https://www.npmjs.com/package/@syi0808/workflow) - Define workflows and tasks
+- [@syi0808/worker](https://www.npmjs.com/package/@syi0808/worker) - Execute workflows
 
 ## License
 

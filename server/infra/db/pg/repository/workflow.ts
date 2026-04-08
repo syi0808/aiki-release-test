@@ -1,7 +1,7 @@
-import type { NonEmptyArray } from "@aikirun/lib/array";
-import type { NamespaceId } from "@aikirun/types/namespace";
-import type { WorkflowSource } from "@aikirun/types/workflow";
-import type { WorkflowListRequestV1, WorkflowListVersionsRequestV1 } from "@aikirun/types/workflow-api";
+import type { NonEmptyArray } from "@syi0808/lib/array";
+import type { NamespaceId } from "@syi0808/types/namespace";
+import type { WorkflowSource } from "@syi0808/types/workflow";
+import type { WorkflowListRequestV1, WorkflowListVersionsRequestV1 } from "@syi0808/types/workflow-api";
 import { and, count, eq, inArray, like, max, or, sql } from "drizzle-orm";
 import { ulid } from "ulidx";
 

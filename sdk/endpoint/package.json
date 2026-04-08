@@ -1,5 +1,5 @@
 {
-	"name": "@aikirun/endpoint",
+	"name": "@syi0808/endpoint",
 	"version": "0.26.0",
 	"description": "Push-based HTTP endpoint for Aiki - execute workflows from serverless environments",
 	"type": "module",
@@ -18,8 +18,8 @@
 		"build": "tsup"
 	},
 	"dependencies": {
-		"@aikirun/types": "workspace:*",
-		"@aikirun/workflow": "workspace:*"
+		"@syi0808/types": "workspace:*",
+		"@syi0808/workflow": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"

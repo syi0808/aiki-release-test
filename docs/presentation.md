@@ -446,7 +446,7 @@ if (payment) { /* fulfill */ } else { /* release */ }
 **With Aiki, you write.**
 
 ```typescript
-import { task } from "@aikirun/workflow";
+import { task } from "@syi0808/workflow";
 
 const createOrder = task({
   name: "create-order",
@@ -465,7 +465,7 @@ const fulfillOrder = task({ /* ... */ });
 ---
 
 ```typescript
-import { event, workflow } from "@aikirun/workflow";
+import { event, workflow } from "@syi0808/workflow";
 
 const processOrderV1 = workflow({ name: "process-order" }).v('1.0.0', {
   async handler(run, orderId: string) {

@@ -1,4 +1,4 @@
-import type { Duration, DurationFields } from "@aikirun/types/duration";
+import type { Duration, DurationFields } from "@syi0808/types/duration";
 
 const MS_PER_SECOND = 1000;
 const MS_PER_MINUTE = 60 * MS_PER_SECOND;

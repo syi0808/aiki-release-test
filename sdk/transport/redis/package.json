@@ -1,5 +1,5 @@
 {
-	"name": "@aikirun/redis",
+	"name": "@syi0808/redis",
 	"version": "0.26.0",
 	"description": "Redis transport for Aiki - high-performance work discovery via Redis Streams",
 	"type": "module",
@@ -18,7 +18,7 @@
 		"build": "tsup"
 	},
 	"dependencies": {
-		"@aikirun/types": "workspace:*",
+		"@syi0808/types": "workspace:*",
 		"ioredis": "^5.4.1",
 		"arktype": "^2.1.29"
 	},

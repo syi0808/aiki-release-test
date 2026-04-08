@@ -7,7 +7,7 @@ Events let external systems communicate with running workflows. When a workflow 
 Define events in the workflow version using the `event()` function:
 
 ```typescript
-import { event } from "@aikirun/workflow";
+import { event } from "@syi0808/workflow";
 
 const orderWorkflowV1 = orderWorkflow.v("1.0.0", {
 	async handler(run, input) {

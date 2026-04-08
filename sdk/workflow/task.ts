@@ -1,25 +1,25 @@
-import { getTaskAddress } from "@aikirun/lib/address";
-import { delay } from "@aikirun/lib/async";
-import { hashInput } from "@aikirun/lib/crypto";
-import { createSerializableError } from "@aikirun/lib/error";
-import { type ObjectBuilder, objectOverrider, type PathFromObject, type TypeOfValueAtPath } from "@aikirun/lib/object";
-import { getRetryParams } from "@aikirun/lib/retry";
-import type { Logger } from "@aikirun/types/logger";
-import type { RequireAtLeastOneProp } from "@aikirun/types/property";
-import type { UnconsumedManifestEntries } from "@aikirun/types/replay-manifest";
-import type { RetryStrategy } from "@aikirun/types/retry";
-import type { Serializable } from "@aikirun/types/serializable";
-import { INTERNAL } from "@aikirun/types/symbols";
-import type { TaskDefinitionOptions, TaskId, TaskInfo, TaskName, TaskStartOptions } from "@aikirun/types/task";
-import { TaskFailedError } from "@aikirun/types/task-error";
-import type { WorkflowRunId } from "@aikirun/types/workflow-run";
+import type { StandardSchemaV1 } from "@standard-schema/spec";
+import { getTaskAddress } from "@syi0808/lib/address";
+import { delay } from "@syi0808/lib/async";
+import { hashInput } from "@syi0808/lib/crypto";
+import { createSerializableError } from "@syi0808/lib/error";
+import { type ObjectBuilder, objectOverrider, type PathFromObject, type TypeOfValueAtPath } from "@syi0808/lib/object";
+import { getRetryParams } from "@syi0808/lib/retry";
+import type { Logger } from "@syi0808/types/logger";
+import type { RequireAtLeastOneProp } from "@syi0808/types/property";
+import type { UnconsumedManifestEntries } from "@syi0808/types/replay-manifest";
+import type { RetryStrategy } from "@syi0808/types/retry";
+import type { Serializable } from "@syi0808/types/serializable";
+import { INTERNAL } from "@syi0808/types/symbols";
+import type { TaskDefinitionOptions, TaskId, TaskInfo, TaskName, TaskStartOptions } from "@syi0808/types/task";
+import { TaskFailedError } from "@syi0808/types/task-error";
+import type { WorkflowRunId } from "@syi0808/types/workflow-run";
 import {
 	NonDeterminismError,
 	WorkflowRunFailedError,
 	WorkflowRunRevisionConflictError,
 	WorkflowRunSuspendedError,
-} from "@aikirun/types/workflow-run-error";
-import type { StandardSchemaV1 } from "@standard-schema/spec";
+} from "@syi0808/types/workflow-run-error";
 
 import type { WorkflowRunContext } from "./run/context";
 import type { WorkflowRunHandle } from "./run/handle";

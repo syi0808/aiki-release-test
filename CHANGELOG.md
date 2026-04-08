@@ -1,21 +1,21 @@
 # Changelog
 
-All notable changes to Aiki packages are documented here. All `@aikirun/*` packages share the same version number and are released together.
+All notable changes to Aiki packages are documented here. All `@syi0808/*` packages share the same version number and are released together.
 
 ## 0.26.0
 
 ### Breaking Changes
 
-- **`@aikirun/subscriber-redis` renamed to `@aikirun/redis`** — Shorter package name. Update your install and imports:
+- **`@syi0808/subscriber-redis` renamed to `@syi0808/redis`** — Shorter package name. Update your install and imports:
   ```typescript
   // Before
-  import { redisSubscriber } from "@aikirun/subscriber-redis";
+  import { redisSubscriber } from "@syi0808/subscriber-redis";
 
   // After
-  import { redisSubscriber } from "@aikirun/redis";
+  import { redisSubscriber } from "@syi0808/redis";
   ```
 
-- **`@aikirun/subscriber-db` renamed to `@aikirun/http`** — Renamed to reflect what it actually does: poll the server's HTTP API. This is an internal package bundled with `@aikirun/worker` — no user code changes needed unless you imported it directly.
+- **`@syi0808/subscriber-db` renamed to `@syi0808/http`** — Renamed to reflect what it actually does: poll the server's HTTP API. This is an internal package bundled with `@syi0808/worker` — no user code changes needed unless you imported it directly.
 
 - **Transport packages moved** — Internal directory restructure from `sdk/subscriber/` to `sdk/transport/`. No impact on published packages.
 
@@ -23,40 +23,40 @@ All notable changes to Aiki packages are documented here. All `@aikirun/*` packa
 
 ### Breaking Changes
 
-- **`@aikirun/task` merged into `@aikirun/workflow`** — The `@aikirun/task` package has been removed. Import `task` from `@aikirun/workflow` instead:
+- **`@syi0808/task` merged into `@syi0808/workflow`** — The `@syi0808/task` package has been removed. Import `task` from `@syi0808/workflow` instead:
   ```typescript
   // Before
-  import { task } from "@aikirun/task";
-  import { workflow } from "@aikirun/workflow";
+  import { task } from "@syi0808/task";
+  import { workflow } from "@syi0808/workflow";
 
   // After
-  import { task, workflow } from "@aikirun/workflow";
+  import { task, workflow } from "@syi0808/workflow";
   ```
 
   Update your install command:
   ```bash
   # Before
-  npm install @aikirun/workflow @aikirun/task @aikirun/client @aikirun/worker
+  npm install @syi0808/workflow @syi0808/task @syi0808/client @syi0808/worker
 
   # After
-  npm install @aikirun/workflow @aikirun/client @aikirun/worker
+  npm install @syi0808/workflow @syi0808/client @syi0808/worker
   ```
 
-- **`@aikirun/worker` no longer depends on `@aikirun/client`** — The client is injected at runtime, not a compile-time dependency. No code changes needed — you already pass the client instance when spawning a worker.
+- **`@syi0808/worker` no longer depends on `@syi0808/client`** — The client is injected at runtime, not a compile-time dependency. No code changes needed — you already pass the client instance when spawning a worker.
 
 ## 0.24.1, 0.24.2 & 0.24.3
 
 ### Patch Changes
 
-- @aikirun/lib and @aikirun/subscriber-db should not be listed as a depdencies on npm. They are private packages.
+- @syi0808/lib and @syi0808/subscriber-db should not be listed as a depdencies on npm. They are private packages.
 
 ## 0.24.0
 
 ### New Features
 
-- **`@aikirun/endpoint` package** — Push-based workflow execution for serverless environments. Exposes a Web Standard `(Request) => Promise<Response>` handler that receives workflow runs via signed HTTP requests from the Aiki server. Works with Cloudflare Workers, AWS Lambda, Vercel, and any platform supporting the Fetch API.
+- **`@syi0808/endpoint` package** — Push-based workflow execution for serverless environments. Exposes a Web Standard `(Request) => Promise<Response>` handler that receives workflow runs via signed HTTP requests from the Aiki server. Works with Cloudflare Workers, AWS Lambda, Vercel, and any platform supporting the Fetch API.
   ```typescript
-  import { endpoint } from "@aikirun/endpoint";
+  import { endpoint } from "@syi0808/endpoint";
 
   const handler = endpoint({
     workflows: [myWorkflowV1],
@@ -66,17 +66,17 @@ All notable changes to Aiki packages are documented here. All `@aikirun/*` packa
   ```
 
 - **Pluggable subscribers** — Work discovery is now a pluggable concern. The client no longer bundles subscriber logic or manages Redis connections. Two subscriber packages are available:
-  - `@aikirun/subscriber-db` — DB polling (default, used automatically when no subscriber is specified)
-  - `@aikirun/subscriber-redis` — Redis Streams for lower-latency delivery
+  - `@syi0808/subscriber-db` — DB polling (default, used automatically when no subscriber is specified)
+  - `@syi0808/subscriber-redis` — Redis Streams for lower-latency delivery
 
-  Custom subscribers can be implemented via the `CreateSubscriber` type from `@aikirun/types/subscriber`.
+  Custom subscribers can be implemented via the `CreateSubscriber` type from `@syi0808/types/subscriber`.
 
 ### Improvements
 
 - **Worker fallback delay fix** — When the worker falls back from a failed primary subscriber to the DB subscriber, it now uses the fallback subscriber's delay config instead of the primary's.
-- **`@aikirun/lib` enforces sub-path imports** — Import from specific sub-paths (e.g., `@aikirun/lib/duration`) instead of the package root.
-- **`@aikirun/task` no longer depends on `@aikirun/workflow`** — Reduced coupling between packages.
-- **Type restructuring** — `Logger`, error classes (`TaskFailedError`, `NonDeterminismError`, `WorkflowRunRevisionConflictError`, etc.), and `ReplayManifest` moved to dedicated files in `@aikirun/types` for cleaner imports.
+- **`@syi0808/lib` enforces sub-path imports** — Import from specific sub-paths (e.g., `@syi0808/lib/duration`) instead of the package root.
+- **`@syi0808/task` no longer depends on `@syi0808/workflow`** — Reduced coupling between packages.
+- **Type restructuring** — `Logger`, error classes (`TaskFailedError`, `NonDeterminismError`, `WorkflowRunRevisionConflictError`, etc.), and `ReplayManifest` moved to dedicated files in `@syi0808/types` for cleaner imports.
 
 ### Breaking Changes
 
@@ -108,7 +108,7 @@ All notable changes to Aiki packages are documented here. All `@aikirun/*` packa
   const w = worker({ workflows: [...], subscriber: { type: "redis" } });
 
   // After
-  import { redisSubscriber } from "@aikirun/subscriber-redis";
+  import { redisSubscriber } from "@syi0808/subscriber-redis";
   const w = worker({ workflows: [...], subscriber: redisSubscriber({ host: "localhost", port: 6379 }) });
   ```
 
@@ -125,10 +125,10 @@ All notable changes to Aiki packages are documented here. All `@aikirun/*` packa
 
 - **`trigger` moved from `WorkflowDefinitionOptions` to `WorkflowStartOptions`** — Trigger is a runtime/caller concern, not a definition concern.
 
-- **Re-exports removed from `@aikirun/client`** — Types like `Logger`, `RedisConfig`, `SubscriberStrategy`, `WorkflowRunBatch`, and `ConsoleLogger` are no longer exported from the client package. Import from their new locations:
-  - `Logger` → `@aikirun/types/logger`
-  - `Subscriber`, `CreateSubscriber` → `@aikirun/types/subscriber`
-  - Error classes → `@aikirun/types/workflow-run-error`, `@aikirun/types/task-error`
+- **Re-exports removed from `@syi0808/client`** — Types like `Logger`, `RedisConfig`, `SubscriberStrategy`, `WorkflowRunBatch`, and `ConsoleLogger` are no longer exported from the client package. Import from their new locations:
+  - `Logger` → `@syi0808/types/logger`
+  - `Subscriber`, `CreateSubscriber` → `@syi0808/types/subscriber`
+  - Error classes → `@syi0808/types/workflow-run-error`, `@syi0808/types/task-error`
 
 ### Documentation
 
@@ -288,12 +288,12 @@ When waiting on run to hit some terminal state, the state transition id is used 
 - **`WorkflowRunTransition` replaced by `StateTransition`** — Transition types changed:
   ```typescript
   // Before
-  import type { WorkflowRunTransition } from "@aikirun/types/workflow-run";
+  import type { WorkflowRunTransition } from "@syi0808/types/workflow-run";
   transition.type === "state"       // WorkflowRunStateTransition
   transition.type === "task_state"  // WorkflowRunTaskStateTransition
 
   // After
-  import type { StateTransition } from "@aikirun/types/state-transition";
+  import type { StateTransition } from "@syi0808/types/state-transition";
   transition.type === "workflow_run"  // WorkflowRunStateTransition
   transition.type === "task"          // TaskStateTransition
   ```
@@ -379,10 +379,10 @@ When waiting on run to hit some terminal state, the state transition id is used 
 - **`OverlapPolicy` renamed to `ScheduleOverlapPolicy`** - Update your imports:
   ```typescript
   // Before
-  import type { OverlapPolicy } from "@aikirun/types/schedule";
+  import type { OverlapPolicy } from "@syi0808/types/schedule";
 
   // After
-  import type { ScheduleOverlapPolicy } from "@aikirun/types/schedule";
+  import type { ScheduleOverlapPolicy } from "@syi0808/types/schedule";
   ```
 
 - **`eventsQueue` renamed to `eventWaitQueues`** in `WorkflowRun` type
@@ -718,13 +718,13 @@ Handler return type can now be auto-inferred from the handler body - no need to 
 
 ### Patch Changes
 
-- No need to mark @aikirun/lib as a dev dependency since it is bundled at build time
+- No need to mark @syi0808/lib as a dev dependency since it is bundled at build time
 
 ## 0.3.2
 
 ### Patch Changes
 
-- Mark @aikirun/lib as a dev dependency
+- Mark @syi0808/lib as a dev dependency
 
 ## 0.3.1
 
@@ -792,8 +792,8 @@ Handler return type can now be auto-inferred from the handler body - no need to 
 
 **Package Structure**
 
-- `@aikirun/lib` is now internal (not published)
-- Public types moved to `@aikirun/types`
+- `@syi0808/lib` is now internal (not published)
+- Public types moved to `@syi0808/types`
 
 ## 0.1.13
 
@@ -808,7 +808,7 @@ Handler return type can now be auto-inferred from the handler body - no need to 
 
 ### Patch Changes
 
-- Remove @aikirun/task dependency on @aikirun/client
+- Remove @syi0808/task dependency on @syi0808/client
 
 ## 0.1.0 - 2025-11-09
 
@@ -816,7 +816,7 @@ Handler return type can now be auto-inferred from the handler body - no need to 
 
 Initial release of all Aiki packages:
 
-**@aikirun/types** - Core type definitions for:
+**@syi0808/types** - Core type definitions for:
 - Workflow and task execution
 - Workflow run states and transitions
 - Trigger strategies (immediate, delayed)
@@ -824,7 +824,7 @@ Initial release of all Aiki packages:
 - Event handling
 - Client interfaces
 
-**@aikirun/lib** - Foundation utilities including:
+**@syi0808/lib** - Foundation utilities including:
 - Duration API with human-readable time syntax (days, hours, minutes, seconds)
 - Retry strategies (never, fixed, exponential, jittered)
 - Async helpers (delay, fireAndForget)
@@ -833,28 +833,28 @@ Initial release of all Aiki packages:
 - Array and object utilities
 - Polling with adaptive backoff
 
-**@aikirun/workflow** - Workflow SDK with:
+**@syi0808/workflow** - Workflow SDK with:
 - Workflow definition and versioning
 - Multiple workflow versions running simultaneously
 - Task execution coordination
 - Structured logging
 - Type-safe workflow execution
 
-**@aikirun/task** - Task SDK for:
+**@syi0808/task** - Task SDK for:
 - Task definition
 - Automatic retry with multiple strategies
 - Idempotency keys for deduplication
 - Structured error handling
 - Task execution within workflows
 
-**@aikirun/client** - Client SDK for:
+**@syi0808/client** - Client SDK for:
 - Connecting to Aiki server
 - Starting workflow executions
 - Polling workflow state changes
 - Type-safe input/output handling
 - Custom logger support
 
-**@aikirun/worker** - Worker SDK for:
+**@syi0808/worker** - Worker SDK for:
 - Executing workflows and tasks
 - Horizontal scaling across multiple workers
 - Durable state management and recovery

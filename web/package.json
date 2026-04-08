@@ -1,5 +1,5 @@
 {
-	"name": "@aikirun/web",
+	"name": "@syi0808/web",
 	"version": "0.26.0",
 	"private": true,
 	"type": "module",
@@ -9,7 +9,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@aikirun/types": "workspace:*",
+		"@syi0808/types": "workspace:*",
 		"@orpc/client": "^1.4.3",
 		"better-auth": "^1.4.14",
 		"@tanstack/react-query": "^5.62.16",

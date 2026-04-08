@@ -1,13 +1,13 @@
-import { isNonEmptyArray, type NonEmptyArray } from "@aikirun/lib/array";
-import { hashInput } from "@aikirun/lib/crypto";
-import type { NamespaceId } from "@aikirun/types/namespace";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
+import { isNonEmptyArray, type NonEmptyArray } from "@syi0808/lib/array";
+import { hashInput } from "@syi0808/lib/crypto";
+import type { NamespaceId } from "@syi0808/types/namespace";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
 import {
 	NON_TERMINAL_WORKFLOW_RUN_STATUSES,
 	type WorkflowRunId,
 	type WorkflowRunStateScheduled,
 	type WorkflowStartOptions,
-} from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-run";
 import type {
 	Repositories,
 	StateTransitionRowInsert,

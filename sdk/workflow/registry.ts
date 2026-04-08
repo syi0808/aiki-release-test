@@ -1,4 +1,4 @@
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
 
 import type { UnknownWorkflowVersion } from "./workflow-version";
 

@@ -1,4 +1,4 @@
-import type { DurationObject } from "@aikirun/types/duration";
+import type { DurationObject } from "@syi0808/types/duration";
 import { type } from "arktype";
 
 export const durationObjectSchema = type({

@@ -1,4 +1,4 @@
-import { task, workflow } from "@aikirun/workflow";
+import { task, workflow } from "@syi0808/workflow";
 
 /**
  * Demonstrates running multiple tasks in concurrent using Promise.all.

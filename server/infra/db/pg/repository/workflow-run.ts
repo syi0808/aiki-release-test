@@ -1,8 +1,8 @@
-import type { NonEmptyArray } from "@aikirun/lib/array";
-import type { NamespaceId } from "@aikirun/types/namespace";
-import type { TaskStatus } from "@aikirun/types/task";
-import type { WorkflowRunId, WorkflowRunState, WorkflowRunStatus } from "@aikirun/types/workflow-run";
-import { NON_TERMINAL_WORKFLOW_RUN_STATUSES } from "@aikirun/types/workflow-run";
+import type { NonEmptyArray } from "@syi0808/lib/array";
+import type { NamespaceId } from "@syi0808/types/namespace";
+import type { TaskStatus } from "@syi0808/types/task";
+import type { WorkflowRunId, WorkflowRunState, WorkflowRunStatus } from "@syi0808/types/workflow-run";
+import { NON_TERMINAL_WORKFLOW_RUN_STATUSES } from "@syi0808/types/workflow-run";
 import { and, count, eq, inArray, lte, or, sql } from "drizzle-orm";
 
 import { toWorkflowRunState } from "./state-transition";

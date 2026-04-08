@@ -1,5 +1,5 @@
 // biome-ignore-all lint/suspicious/noConsole: this is a console logger
-import type { Logger } from "@aikirun/types/logger";
+import type { Logger } from "@syi0808/types/logger";
 
 type LogLevel = "TRACE" | "DEBUG" | "INFO" | "WARN" | "ERROR";
 

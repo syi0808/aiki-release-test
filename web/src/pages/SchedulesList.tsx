@@ -1,4 +1,4 @@
-import type { Schedule, ScheduleStatus } from "@aikirun/types/schedule";
+import type { Schedule, ScheduleStatus } from "@syi0808/types/schedule";
 import { useQueryClient } from "@tanstack/react-query";
 import type { CSSProperties } from "react";
 import { useMemo, useState } from "react";

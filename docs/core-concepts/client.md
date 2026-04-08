@@ -5,7 +5,7 @@ The Aiki client connects to the server and lets you start workflows.
 ## Creating a Client
 
 ```typescript
-import { client } from "@aikirun/client";
+import { client } from "@syi0808/client";
 
 const aikiClient = client({
 	url: "http://localhost:9850",

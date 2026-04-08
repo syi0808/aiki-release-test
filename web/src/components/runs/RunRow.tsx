@@ -1,4 +1,4 @@
-import type { WorkflowRunListItem } from "@aikirun/types/workflow-run-api";
+import type { WorkflowRunListItem } from "@syi0808/types/workflow-run-api";
 import { Link } from "react-router-dom";
 
 import { TaskSummaryBar } from "./TaskSummaryBar";

@@ -1,5 +1,5 @@
-import { isNonEmptyArray } from "@aikirun/lib/array";
-import type { NamespaceId } from "@aikirun/types/namespace";
+import { isNonEmptyArray } from "@syi0808/lib/array";
+import type { NamespaceId } from "@syi0808/types/namespace";
 import { ForbiddenError } from "server/errors";
 import {
 	isOrganizationManager,

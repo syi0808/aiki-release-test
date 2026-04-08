@@ -1,4 +1,4 @@
-import type { RequiredNonNullableProp, RequiredProp } from "@aikirun/types/property";
+import type { RequiredNonNullableProp, RequiredProp } from "@syi0808/types/property";
 
 import type { NonEmptyArray } from "../array";
 

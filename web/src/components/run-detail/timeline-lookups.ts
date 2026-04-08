@@ -1,8 +1,8 @@
-import type { EventWaitQueue } from "@aikirun/types/event";
-import type { SleepQueue } from "@aikirun/types/sleep";
-import type { StateTransition } from "@aikirun/types/state-transition";
-import type { TaskInfo } from "@aikirun/types/task";
-import type { ChildWorkflowRunInfo } from "@aikirun/types/workflow-run";
+import type { EventWaitQueue } from "@syi0808/types/event";
+import type { SleepQueue } from "@syi0808/types/sleep";
+import type { StateTransition } from "@syi0808/types/state-transition";
+import type { TaskInfo } from "@syi0808/types/task";
+import type { ChildWorkflowRunInfo } from "@syi0808/types/workflow-run";
 
 export interface TimelineLookups {
 	childWorkflowById: Map<string, ChildWorkflowRunInfo>;

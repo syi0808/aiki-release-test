@@ -1,5 +1,5 @@
-import { chunkLazy, isNonEmptyArray, type NonEmptyArray } from "@aikirun/lib/array";
-import type { WorkflowRunStateScheduled } from "@aikirun/types/workflow-run";
+import { chunkLazy, isNonEmptyArray, type NonEmptyArray } from "@syi0808/lib/array";
+import type { WorkflowRunStateScheduled } from "@syi0808/types/workflow-run";
 import type { Repositories, StateTransitionRowInsert } from "server/infra/db/types";
 import { runConcurrently } from "server/lib/concurrency";
 import type { CronContext } from "server/middleware/context";

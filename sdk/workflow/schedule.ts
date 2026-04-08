@@ -1,8 +1,8 @@
-import { toMilliseconds } from "@aikirun/lib/duration";
-import { type ObjectBuilder, objectOverrider, type PathFromObject, type TypeOfValueAtPath } from "@aikirun/lib/object";
-import type { Client } from "@aikirun/types/client";
-import type { DurationObject } from "@aikirun/types/duration";
-import type { ScheduleActivateOptions, ScheduleId, ScheduleOverlapPolicy, ScheduleSpec } from "@aikirun/types/schedule";
+import { toMilliseconds } from "@syi0808/lib/duration";
+import { type ObjectBuilder, objectOverrider, type PathFromObject, type TypeOfValueAtPath } from "@syi0808/lib/object";
+import type { Client } from "@syi0808/types/client";
+import type { DurationObject } from "@syi0808/types/duration";
+import type { ScheduleActivateOptions, ScheduleId, ScheduleOverlapPolicy, ScheduleSpec } from "@syi0808/types/schedule";
 
 import type { EventsDefinition } from "./run/event";
 import type { WorkflowVersion } from "./workflow-version";

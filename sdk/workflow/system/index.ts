@@ -1,4 +1,4 @@
-import type { ApiClient } from "@aikirun/types/client";
+import type { ApiClient } from "@syi0808/types/client";
 
 import { createCancelChildRunsV1 } from "./cancel-child-runs";
 import type { AnyWorkflowVersion } from "../workflow-version";

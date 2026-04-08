@@ -1,9 +1,9 @@
-import { ConsoleLogger } from "@aikirun/lib/logger";
-import type { ApiClient, Client, ClientParams } from "@aikirun/types/client";
-import type { Logger } from "@aikirun/types/logger";
-import { INTERNAL } from "@aikirun/types/symbols";
 import { createORPCClient } from "@orpc/client";
 import { RPCLink } from "@orpc/client/fetch";
+import { ConsoleLogger } from "@syi0808/lib/logger";
+import type { ApiClient, Client, ClientParams } from "@syi0808/types/client";
+import type { Logger } from "@syi0808/types/logger";
+import { INTERNAL } from "@syi0808/types/symbols";
 
 /**
  * Creates an Aiki client for starting and managing workflows.

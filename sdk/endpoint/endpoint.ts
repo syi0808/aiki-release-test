@@ -1,13 +1,13 @@
-import type { Client } from "@aikirun/types/client";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
-import type { WorkflowRun, WorkflowRunId } from "@aikirun/types/workflow-run";
+import type { Client } from "@syi0808/types/client";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
+import type { WorkflowRun, WorkflowRunId } from "@syi0808/types/workflow-run";
 import {
 	type AnyWorkflowVersion,
 	executeWorkflowRun,
 	getSystemWorkflows,
 	type WorkflowExecutionOptions,
 	workflowRegistry,
-} from "@aikirun/workflow";
+} from "@syi0808/workflow";
 
 import { verifySignature } from "./signature";
 

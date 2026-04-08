@@ -1,4 +1,4 @@
-import type { NamespaceRole } from "@aikirun/types/namespace";
+import type { NamespaceRole } from "@syi0808/types/namespace";
 import { useQueryClient } from "@tanstack/react-query";
 import { createContext, type ReactNode, useCallback, useContext, useEffect, useState } from "react";
 

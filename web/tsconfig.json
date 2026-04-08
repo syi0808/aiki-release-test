@@ -2,8 +2,8 @@
 	"compilerOptions": {
 		"baseUrl": "..",
 		"paths": {
-			"@aikirun/types": ["./types/index.ts"],
-			"@aikirun/types/*": ["./types/*.ts"]
+			"@syi0808/types": ["./types/index.ts"],
+			"@syi0808/types/*": ["./types/*.ts"]
 		},
 		"target": "ES2022",
 		"useDefineForClassFields": true,

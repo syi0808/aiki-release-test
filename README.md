@@ -20,7 +20,7 @@ Aiki workflows are like a virtual thread of execution that can be suspended (int
 A workflow that activates a 14-day free trial and waits for the user to pay. If payment arrives early, it completes immediately. If the trial expires, the user is downgraded.
 
 ```typescript
-import { event, task, workflow } from "@aikirun/workflow";
+import { event, task, workflow } from "@syi0808/workflow";
 
 const activateTrial = task({ name: "activate-trial", async handler(userId: string) { /* ... */ } });
 const downgradeToFree = task({ name: "downgrade-to-free", async handler(userId: string) { /* ... */ } });
@@ -59,7 +59,7 @@ This looks like ordinary TypeScript, but behind the scenes Aiki makes it durable
 A more complete example showing events with typed data, child workflows, and durable sleep working together.
 
 ```typescript
-import { event, workflow } from "@aikirun/workflow";
+import { event, workflow } from "@syi0808/workflow";
 import { notifyRestaurant, notifyCustomer, sendFeedbackEmail } from "./tasks";
 import { courierDeliveryV1 } from "./courier-workflow";
 
@@ -105,7 +105,7 @@ export const restaurantOrderV1 = workflow({ name: "restaurant-order" }).v("1.0.0
 
 Install the Aiki SDK:
 ```bash
-npm install @aikirun/workflow @aikirun/client @aikirun/worker
+npm install @syi0808/workflow @syi0808/client @syi0808/worker
 ```
 
 Start Aiki (requires PostgreSQL — see [Installation Guide](./docs/getting-started/installation.md)):
@@ -126,8 +126,8 @@ bun run web     # Terminal 2 - start the web UI
 The server runs on `http://localhost:9850` and the web UI on `http://localhost:9851`.
 
 ```typescript
-import { client } from "@aikirun/client";
-import { worker } from "@aikirun/worker";
+import { client } from "@syi0808/client";
+import { worker } from "@syi0808/worker";
 import { trialV1 } from "./workflow";
 
 const aikiClient = client({
@@ -204,11 +204,11 @@ See the [Installation Guide](./docs/getting-started/installation.md) for detaile
 
 ## Packages
 
-- [`@aikirun/workflow`](https://www.npmjs.com/package/@aikirun/workflow) — Workflow and Task SDK
-- [`@aikirun/client`](https://www.npmjs.com/package/@aikirun/client) — Client SDK
-- [`@aikirun/worker`](https://www.npmjs.com/package/@aikirun/worker) — Worker SDK
-- [`@aikirun/endpoint`](https://www.npmjs.com/package/@aikirun/endpoint) — Endpoint SDK (serverless)
-- [`@aikirun/redis`](https://www.npmjs.com/package/@aikirun/redis) — Redis transport (optional)
+- [`@syi0808/workflow`](https://www.npmjs.com/package/@syi0808/workflow) — Workflow and Task SDK
+- [`@syi0808/client`](https://www.npmjs.com/package/@syi0808/client) — Client SDK
+- [`@syi0808/worker`](https://www.npmjs.com/package/@syi0808/worker) — Worker SDK
+- [`@syi0808/endpoint`](https://www.npmjs.com/package/@syi0808/endpoint) — Endpoint SDK (serverless)
+- [`@syi0808/redis`](https://www.npmjs.com/package/@syi0808/redis) — Redis transport (optional)
 
 ## License
 

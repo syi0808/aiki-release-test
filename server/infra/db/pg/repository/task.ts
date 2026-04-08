@@ -1,4 +1,4 @@
-import type { NonEmptyArray } from "@aikirun/lib/array";
+import type { NonEmptyArray } from "@syi0808/lib/array";
 import { and, eq, inArray, lte, min } from "drizzle-orm";
 
 import type { PgDb } from "../provider";

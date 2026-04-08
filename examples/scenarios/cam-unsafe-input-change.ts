@@ -1,4 +1,4 @@
-import { delay } from "@aikirun/lib/async";
+import { delay } from "@syi0808/lib/async";
 
 import { runWithWorker } from "../shared/worker";
 import * as cam from "../workflows/cam-divergence";

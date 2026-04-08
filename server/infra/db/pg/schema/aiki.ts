@@ -1,14 +1,14 @@
-import { EVENT_WAIT_STATUSES } from "@aikirun/types/event";
+import { EVENT_WAIT_STATUSES } from "@syi0808/types/event";
 import {
 	SCHEDULE_CONFLICT_POLICIES,
 	SCHEDULE_OVERLAP_POLICIES,
 	SCHEDULE_STATUSES,
 	SCHEDULE_TYPES,
-} from "@aikirun/types/schedule";
-import { SLEEP_STATUSES } from "@aikirun/types/sleep";
-import { STATE_TRANSITION_TYPES } from "@aikirun/types/state-transition";
-import { TASK_STATUSES } from "@aikirun/types/task";
-import { WORKFLOW_SOURCES } from "@aikirun/types/workflow";
+} from "@syi0808/types/schedule";
+import { SLEEP_STATUSES } from "@syi0808/types/sleep";
+import { STATE_TRANSITION_TYPES } from "@syi0808/types/state-transition";
+import { TASK_STATUSES } from "@syi0808/types/task";
+import { WORKFLOW_SOURCES } from "@syi0808/types/workflow";
 import {
 	CHILD_WORKFLOW_RUN_WAIT_STATUSES,
 	TERMINAL_WORKFLOW_RUN_STATUSES,
@@ -16,7 +16,7 @@ import {
 	WORKFLOW_RUN_FAILURE_CAUSE,
 	WORKFLOW_RUN_SCHEDULED_REASON,
 	WORKFLOW_RUN_STATUSES,
-} from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-run";
 import { relations, sql } from "drizzle-orm";
 import {
 	check,

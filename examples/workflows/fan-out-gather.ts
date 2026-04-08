@@ -1,4 +1,4 @@
-import { task, workflow } from "@aikirun/workflow";
+import { task, workflow } from "@syi0808/workflow";
 
 /**
  * Demonstrates distributed fan-out/gather using child workflows.

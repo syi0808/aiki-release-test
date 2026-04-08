@@ -1,11 +1,11 @@
-import type { NonEmptyArray } from "@aikirun/lib/array";
-import { chunkLazy, isNonEmptyArray } from "@aikirun/lib/array";
+import type { NonEmptyArray } from "@syi0808/lib/array";
+import { chunkLazy, isNonEmptyArray } from "@syi0808/lib/array";
 import type {
 	WorkflowRunScheduledReason,
 	WorkflowRunState,
 	WorkflowRunStateQueued,
 	WorkflowStartOptions,
-} from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-run";
 import type { Repositories, StateTransitionRowInsert, WorkflowRunOutboxRowInsert } from "server/infra/db/types";
 import { runConcurrently } from "server/lib/concurrency";
 import type { CronContext } from "server/middleware/context";

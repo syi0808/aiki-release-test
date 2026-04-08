@@ -16,9 +16,9 @@ Make sure you've completed the [Installation](./installation.md) steps:
 Create a file called `my-first-workflow.ts`:
 
 ```typescript
-import { client } from "@aikirun/client";
-import { worker } from "@aikirun/worker";
-import { task, workflow } from "@aikirun/workflow";
+import { client } from "@syi0808/client";
+import { worker } from "@syi0808/worker";
+import { task, workflow } from "@syi0808/workflow";
 
 // 1. Define a task (unit of work)
 const greet = task({

@@ -1,8 +1,8 @@
 import { randomBytes } from "node:crypto";
-import type { NonEmptyArray } from "@aikirun/lib/array";
-import { sha256Sync } from "@aikirun/lib/crypto";
-import type { NamespaceId, NamespaceRole } from "@aikirun/types/namespace";
-import type { OrganizationId } from "@aikirun/types/organization";
+import type { NonEmptyArray } from "@syi0808/lib/array";
+import { sha256Sync } from "@syi0808/lib/crypto";
+import type { NamespaceId, NamespaceRole } from "@syi0808/types/namespace";
+import type { OrganizationId } from "@syi0808/types/organization";
 import type { Redis } from "ioredis";
 import { UnauthorizedError } from "server/errors";
 import type { ApiKeyRepository, ApiKeyRowInsert, Repositories } from "server/infra/db/types";

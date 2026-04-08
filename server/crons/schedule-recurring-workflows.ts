@@ -1,14 +1,14 @@
-import type { NonEmptyArray } from "@aikirun/lib/array";
-import { isNonEmptyArray } from "@aikirun/lib/array";
-import type { NamespaceId } from "@aikirun/types/namespace";
-import type { Schedule, ScheduleOverlapPolicy } from "@aikirun/types/schedule";
+import type { NonEmptyArray } from "@syi0808/lib/array";
+import { isNonEmptyArray } from "@syi0808/lib/array";
+import type { NamespaceId } from "@syi0808/types/namespace";
+import type { Schedule, ScheduleOverlapPolicy } from "@syi0808/types/schedule";
 import {
 	NON_TERMINAL_WORKFLOW_RUN_STATUSES,
 	type WorkflowRunId,
 	type WorkflowRunStateCancelled,
 	type WorkflowRunStateScheduled,
 	type WorkflowStartOptions,
-} from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-run";
 import type { Repositories, StateTransitionRowInsert, WorkflowRunRowInsert } from "server/infra/db/types";
 import type { CronContext } from "server/middleware/context";
 import type { CancelledParentRun, ChildRunCanceller } from "server/service/cancel-child-runs";

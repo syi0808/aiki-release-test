@@ -1,4 +1,4 @@
-# @aikirun/lib
+# @syi0808/lib
 
 Internal utilities library for Aiki - a durable execution platform.
 
@@ -29,7 +29,7 @@ Internal utilities library for Aiki - a durable execution platform.
 ### Duration Conversion
 
 ```typescript
-import { toMilliseconds } from "@aikirun/lib/duration";
+import { toMilliseconds } from "@syi0808/lib/duration";
 
 // Convert duration objects to milliseconds
 const ms1 = toMilliseconds(5000); // 5000ms
@@ -41,7 +41,7 @@ const ms4 = toMilliseconds({ days: 1, hours: 2 }); // 93600000ms
 ### Retry Strategies
 
 ```typescript
-import type { RetryStrategy } from "@aikirun/lib/retry";
+import type { RetryStrategy } from "@syi0808/lib/retry";
 
 const exponentialRetry: RetryStrategy = {
 	type: "exponential",
@@ -61,7 +61,7 @@ const fixedRetry: RetryStrategy = {
 ### Async Utilities
 
 ```typescript
-import { delay } from "@aikirun/lib/async";
+import { delay } from "@syi0808/lib/async";
 
 // Wait for a duration
 await delay(1000);

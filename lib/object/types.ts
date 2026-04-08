@@ -1,5 +1,5 @@
 // biome-ignore-all lint/correctness/noUnusedVariables: the unused types are tests
-import type { RequireAtLeastOneProp } from "@aikirun/types/property";
+import type { RequireAtLeastOneProp } from "@syi0808/types/property";
 
 import type { NonEmptyArray } from "../array";
 import type { Equal, ExpectTrue } from "../testing/expect/types";

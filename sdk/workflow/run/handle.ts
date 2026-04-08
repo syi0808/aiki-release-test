@@ -1,24 +1,24 @@
-import { toMilliseconds } from "@aikirun/lib/duration";
-import { withRetry } from "@aikirun/lib/retry";
-import type { ApiClient, Client } from "@aikirun/types/client";
-import type { DurationObject } from "@aikirun/types/duration";
-import type { Logger } from "@aikirun/types/logger";
-import type { DistributiveOmit } from "@aikirun/types/property";
-import type { RetryStrategy } from "@aikirun/types/retry";
-import { INTERNAL } from "@aikirun/types/symbols";
-import type { TaskInfo } from "@aikirun/types/task";
+import { toMilliseconds } from "@syi0808/lib/duration";
+import { withRetry } from "@syi0808/lib/retry";
+import type { ApiClient, Client } from "@syi0808/types/client";
+import type { DurationObject } from "@syi0808/types/duration";
+import type { Logger } from "@syi0808/types/logger";
+import type { DistributiveOmit } from "@syi0808/types/property";
+import type { RetryStrategy } from "@syi0808/types/retry";
+import { INTERNAL } from "@syi0808/types/symbols";
+import type { TaskInfo } from "@syi0808/types/task";
 import type {
 	TerminalWorkflowRunStatus,
 	WorkflowRun,
 	WorkflowRunId,
 	WorkflowRunState,
-} from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-run";
 import type {
 	WorkflowRunStateRequest,
 	WorkflowRunTransitionStateResponseV1,
 	WorkflowRunTransitionTaskStateRequestV1,
-} from "@aikirun/types/workflow-run-api";
-import { WorkflowRunNotExecutableError, WorkflowRunRevisionConflictError } from "@aikirun/types/workflow-run-error";
+} from "@syi0808/types/workflow-run-api";
+import { WorkflowRunNotExecutableError, WorkflowRunRevisionConflictError } from "@syi0808/types/workflow-run-error";
 
 import { createEventSenders, type EventSenders, type EventsDefinition } from "./event";
 

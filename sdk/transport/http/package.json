@@ -1,5 +1,5 @@
 {
-	"name": "@aikirun/http",
+	"name": "@syi0808/http",
 	"version": "0.26.0",
 	"private": true,
 	"description": "Internal HTTP polling transport for Aiki workers",
@@ -19,7 +19,7 @@
 		"build": "tsup"
 	},
 	"dependencies": {
-		"@aikirun/types": "workspace:*"
+		"@syi0808/types": "workspace:*"
 	},
 	"license": "Apache-2.0"
 }

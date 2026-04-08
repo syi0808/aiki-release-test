@@ -1,4 +1,5 @@
-import type { Equal, ExpectTrue } from "@aikirun/lib/testing/expect";
+import { oc } from "@orpc/contract";
+import type { Equal, ExpectTrue } from "@syi0808/lib/testing/expect";
 import type {
 	WorkflowRunApi,
 	WorkflowRunCancelByIdsRequestV1,
@@ -30,8 +31,7 @@ import type {
 	WorkflowRunTransitionStateResponseV1,
 	WorkflowRunTransitionTaskStateRequestV1,
 	WorkflowRunTransitionTaskStateResponseV1,
-} from "@aikirun/types/workflow-run-api";
-import { oc } from "@orpc/contract";
+} from "@syi0808/types/workflow-run-api";
 import { type } from "arktype";
 
 import type { ContractProcedure, ContractProcedureToApi } from "./helper";

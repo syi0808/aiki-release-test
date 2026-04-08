@@ -1,5 +1,5 @@
-import { fireAndForget } from "@aikirun/lib/async";
-import type { NamespaceRole } from "@aikirun/types/namespace";
+import { fireAndForget } from "@syi0808/lib/async";
+import type { NamespaceRole } from "@syi0808/types/namespace";
 
 import { namespaceAuthedImplementer } from "./implementer";
 import { ForbiddenError, UnauthorizedError } from "../errors";

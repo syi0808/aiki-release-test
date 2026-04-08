@@ -1,16 +1,16 @@
-import { isNonEmptyArray } from "@aikirun/lib/array";
-import { hashInput, sha256 } from "@aikirun/lib/crypto";
-import { stableStringify } from "@aikirun/lib/json";
-import type { NamespaceId } from "@aikirun/types/namespace";
+import { isNonEmptyArray } from "@syi0808/lib/array";
+import { hashInput, sha256 } from "@syi0808/lib/crypto";
+import { stableStringify } from "@syi0808/lib/json";
+import type { NamespaceId } from "@syi0808/types/namespace";
 import type {
 	Schedule,
 	ScheduleConflictPolicy,
 	ScheduleId,
 	ScheduleSpec,
 	ScheduleStatus,
-} from "@aikirun/types/schedule";
-import type { ScheduleListRequestV1 } from "@aikirun/types/schedule-api";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
+} from "@syi0808/types/schedule";
+import type { ScheduleListRequestV1 } from "@syi0808/types/schedule-api";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
 import CronExpressionParser from "cron-parser";
 import { NotFoundError, ScheduleConflictError } from "server/errors";
 import type { Repositories, ScheduleRow } from "server/infra/db/types";

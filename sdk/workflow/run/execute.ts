@@ -1,15 +1,15 @@
-import type { Client } from "@aikirun/types/client";
-import type { Logger } from "@aikirun/types/logger";
-import { INTERNAL } from "@aikirun/types/symbols";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
-import type { WorkflowRun, WorkflowRunId } from "@aikirun/types/workflow-run";
+import type { Client } from "@syi0808/types/client";
+import type { Logger } from "@syi0808/types/logger";
+import { INTERNAL } from "@syi0808/types/symbols";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
+import type { WorkflowRun, WorkflowRunId } from "@syi0808/types/workflow-run";
 import {
 	NonDeterminismError,
 	WorkflowRunFailedError,
 	WorkflowRunNotExecutableError,
 	WorkflowRunRevisionConflictError,
 	WorkflowRunSuspendedError,
-} from "@aikirun/types/workflow-run-error";
+} from "@syi0808/types/workflow-run-error";
 
 import { createEventWaiters } from "./event";
 import { workflowRunHandle } from "./handle";

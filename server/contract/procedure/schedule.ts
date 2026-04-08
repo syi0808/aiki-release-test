@@ -1,4 +1,5 @@
-import type { Equal, ExpectTrue } from "@aikirun/lib/testing/expect";
+import { oc } from "@orpc/contract";
+import type { Equal, ExpectTrue } from "@syi0808/lib/testing/expect";
 import type {
 	ScheduleActivateRequestV1,
 	ScheduleActivateResponseV1,
@@ -12,8 +13,7 @@ import type {
 	ScheduleListResponseV1,
 	SchedulePauseRequestV1,
 	ScheduleResumeRequestV1,
-} from "@aikirun/types/schedule-api";
-import { oc } from "@orpc/contract";
+} from "@syi0808/types/schedule-api";
 import { type } from "arktype";
 
 import type { ContractProcedure, ContractProcedureToApi } from "./helper";

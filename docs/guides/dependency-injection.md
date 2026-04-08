@@ -11,7 +11,7 @@ Use this pattern for long-lived dependencies like database connections, API clie
 Wrap your task definition in a function that accepts dependencies:
 
 ```typescript
-import { task } from "@aikirun/workflow";
+import { task } from "@syi0808/workflow";
 
 interface EmailService {
 	send(to: string, subject: string, body: string): Promise<void>;
@@ -35,7 +35,7 @@ export const notifyCustomer = createNotifyCustomer(emailService);
 The same pattern works for workflows:
 
 ```typescript
-import { workflow } from "@aikirun/workflow";
+import { workflow } from "@syi0808/workflow";
 
 interface Database {
 	orders: {
@@ -69,8 +69,8 @@ export const orderWorkflowV1 = createOrderWorkflow(db);
 Use `AppContext` for data that should be unique per workflow execution, like trace IDs or request metadata. The `createContext` function is called before each workflow execution.
 
 ```typescript
-import { workflow } from "@aikirun/workflow";
-import { client } from "@aikirun/client";
+import { workflow } from "@syi0808/workflow";
+import { client } from "@syi0808/client";
 
 interface AppContext {
 	traceId: string;

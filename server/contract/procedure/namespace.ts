@@ -1,4 +1,5 @@
-import type { Equal, ExpectTrue } from "@aikirun/lib/testing/expect";
+import { oc } from "@orpc/contract";
+import type { Equal, ExpectTrue } from "@syi0808/lib/testing/expect";
 import type {
 	NamespaceApi,
 	NamespaceCreateRequestV1,
@@ -11,14 +12,13 @@ import type {
 	NamespaceListResponseV1,
 	NamespaceRemoveMembershipRequestV1,
 	NamespaceSetMembershipRequestV1,
-} from "@aikirun/types/namespace-api";
-import { oc } from "@orpc/contract";
+} from "@syi0808/types/namespace-api";
 import { type } from "arktype";
 
 import type { ContractProcedure, ContractProcedureToApi } from "./helper";
 import { namespaceInfoSchema, namespaceMemberInfoSchema, namespaceRoleSchema } from "../schema/namespace";
 
-export type { NamespaceApi, NamespaceInfo } from "@aikirun/types/namespace-api";
+export type { NamespaceApi, NamespaceInfo } from "@syi0808/types/namespace-api";
 
 const createV1: ContractProcedure<NamespaceCreateRequestV1, NamespaceCreateResponseV1> = oc
 	.input(type({ name: "string > 0" }))

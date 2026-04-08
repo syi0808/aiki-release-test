@@ -1,5 +1,5 @@
-import { API_KEY_STATUSES } from "@aikirun/types/api-key-api";
-import { NAMESPACE_ROLES } from "@aikirun/types/namespace";
+import { API_KEY_STATUSES } from "@syi0808/types/api-key-api";
+import { NAMESPACE_ROLES } from "@syi0808/types/namespace";
 import { sql } from "drizzle-orm";
 import { boolean, foreignKey, index, jsonb, pgEnum, pgTable, text, uniqueIndex } from "drizzle-orm/pg-core";
 

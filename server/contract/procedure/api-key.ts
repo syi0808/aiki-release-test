@@ -1,18 +1,18 @@
-import type { Equal, ExpectTrue } from "@aikirun/lib/testing/expect";
+import { oc } from "@orpc/contract";
+import type { Equal, ExpectTrue } from "@syi0808/lib/testing/expect";
 import type {
 	ApiKeyApi,
 	ApiKeyCreateRequestV1,
 	ApiKeyCreateResponseV1,
 	ApiKeyListResponseV1,
 	ApiKeyRevokeRequestV1,
-} from "@aikirun/types/api-key-api";
-import { oc } from "@orpc/contract";
+} from "@syi0808/types/api-key-api";
 import { type } from "arktype";
 
 import type { ContractProcedure, ContractProcedureToApi } from "./helper";
 import { apiKeyInfoSchema } from "../schema/api-key";
 
-export type { ApiKeyApi, ApiKeyInfo, ApiKeyStatus } from "@aikirun/types/api-key-api";
+export type { ApiKeyApi, ApiKeyInfo, ApiKeyStatus } from "@syi0808/types/api-key-api";
 
 const createV1: ContractProcedure<ApiKeyCreateRequestV1, ApiKeyCreateResponseV1> = oc
 	.input(type({ name: "string > 0", "expiresAt?": "number > 0 | undefined" }))

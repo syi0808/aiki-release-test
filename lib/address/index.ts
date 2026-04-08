@@ -1,5 +1,5 @@
-import type { TaskAddress } from "@aikirun/types/task";
-import type { WorkflowRunAddress } from "@aikirun/types/workflow-run";
+import type { TaskAddress } from "@syi0808/types/task";
+import type { WorkflowRunAddress } from "@syi0808/types/workflow-run";
 
 /**
  * Generates an address for identifying task executions within a workflow.

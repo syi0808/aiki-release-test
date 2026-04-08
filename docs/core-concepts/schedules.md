@@ -5,8 +5,8 @@ A schedule automatically triggers workflows at defined times or intervals. Use s
 ## Creating a Schedule
 
 ```typescript
-import { client } from "@aikirun/client";
-import { schedule } from "@aikirun/workflow";
+import { client } from "@syi0808/client";
+import { schedule } from "@syi0808/workflow";
 import { dailyReportWorkflowV1 } from "./workflows";
 
 const aikiClient = client({

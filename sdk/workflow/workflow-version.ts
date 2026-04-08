@@ -1,32 +1,32 @@
-import { getWorkflowRunAddress } from "@aikirun/lib/address";
-import { hashInput } from "@aikirun/lib/crypto";
-import { createSerializableError } from "@aikirun/lib/error";
-import { type ObjectBuilder, objectOverrider, type PathFromObject, type TypeOfValueAtPath } from "@aikirun/lib/object";
-import { getRetryParams } from "@aikirun/lib/retry";
-import type { Client } from "@aikirun/types/client";
-import type { Logger } from "@aikirun/types/logger";
-import type { RequireAtLeastOneProp } from "@aikirun/types/property";
-import type { ReplayManifest } from "@aikirun/types/replay-manifest";
-import type { RetryStrategy } from "@aikirun/types/retry";
-import { INTERNAL } from "@aikirun/types/symbols";
-import { TaskFailedError } from "@aikirun/types/task-error";
-import { SchemaValidationError } from "@aikirun/types/validator";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
+import type { StandardSchemaV1 } from "@standard-schema/spec";
+import { getWorkflowRunAddress } from "@syi0808/lib/address";
+import { hashInput } from "@syi0808/lib/crypto";
+import { createSerializableError } from "@syi0808/lib/error";
+import { type ObjectBuilder, objectOverrider, type PathFromObject, type TypeOfValueAtPath } from "@syi0808/lib/object";
+import { getRetryParams } from "@syi0808/lib/retry";
+import type { Client } from "@syi0808/types/client";
+import type { Logger } from "@syi0808/types/logger";
+import type { RequireAtLeastOneProp } from "@syi0808/types/property";
+import type { ReplayManifest } from "@syi0808/types/replay-manifest";
+import type { RetryStrategy } from "@syi0808/types/retry";
+import { INTERNAL } from "@syi0808/types/symbols";
+import { TaskFailedError } from "@syi0808/types/task-error";
+import { SchemaValidationError } from "@syi0808/types/validator";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
 import type {
 	WorkflowDefinitionOptions,
 	WorkflowRun,
 	WorkflowRunId,
 	WorkflowRunStateFailed,
 	WorkflowStartOptions,
-} from "@aikirun/types/workflow-run";
-import type { WorkflowRunStateAwaitingRetryRequest } from "@aikirun/types/workflow-run-api";
+} from "@syi0808/types/workflow-run";
+import type { WorkflowRunStateAwaitingRetryRequest } from "@syi0808/types/workflow-run-api";
 import {
 	NonDeterminismError,
 	WorkflowRunFailedError,
 	WorkflowRunRevisionConflictError,
 	WorkflowRunSuspendedError,
-} from "@aikirun/types/workflow-run-error";
-import type { StandardSchemaV1 } from "@standard-schema/spec";
+} from "@syi0808/types/workflow-run-error";
 
 import type { WorkflowRunContext } from "./run/context";
 import { createEventMulticasters, type EventMulticasters, type EventsDefinition } from "./run/event";

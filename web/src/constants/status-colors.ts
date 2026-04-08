@@ -1,6 +1,6 @@
-import type { ScheduleStatus } from "@aikirun/types/schedule";
-import type { TaskStatus } from "@aikirun/types/task";
-import type { WorkflowRunStatus } from "@aikirun/types/workflow-run";
+import type { ScheduleStatus } from "@syi0808/types/schedule";
+import type { TaskStatus } from "@syi0808/types/task";
+import type { WorkflowRunStatus } from "@syi0808/types/workflow-run";
 
 export const WORKFLOW_RUN_STATUS_COLORS: Record<WorkflowRunStatus, { tint: string; text: string }> = {
 	scheduled: { tint: "#A78BFA", text: "var(--accent-purple)" },

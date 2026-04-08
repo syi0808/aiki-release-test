@@ -25,6 +25,6 @@
 
 ## Packages
 
-- [@aikirun/workflow](https://www.npmjs.com/package/@aikirun/workflow): Workflow and Task SDK
-- [@aikirun/client](https://www.npmjs.com/package/@aikirun/client): Client SDK
-- [@aikirun/worker](https://www.npmjs.com/package/@aikirun/worker): Worker SDK
+- [@syi0808/workflow](https://www.npmjs.com/package/@syi0808/workflow): Workflow and Task SDK
+- [@syi0808/client](https://www.npmjs.com/package/@syi0808/client): Client SDK
+- [@syi0808/worker](https://www.npmjs.com/package/@syi0808/worker): Worker SDK

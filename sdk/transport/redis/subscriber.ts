@@ -1,16 +1,16 @@
-import { getWorkerConsumerGroupName, getWorkflowStreamName } from "@aikirun/lib/address";
-import { distributeRoundRobin, isNonEmptyArray, type NonEmptyArray, shuffleArray } from "@aikirun/lib/array";
-import { getRetryParams } from "@aikirun/lib/retry";
-import type { Logger } from "@aikirun/types/logger";
+import { getWorkerConsumerGroupName, getWorkflowStreamName } from "@syi0808/lib/address";
+import { distributeRoundRobin, isNonEmptyArray, type NonEmptyArray, shuffleArray } from "@syi0808/lib/array";
+import { getRetryParams } from "@syi0808/lib/retry";
+import type { Logger } from "@syi0808/types/logger";
 import type {
 	CreateSubscriber,
 	Subscriber,
 	SubscriberContext,
 	SubscriberDelayParams,
 	WorkflowRunBatch,
-} from "@aikirun/types/subscriber";
-import type { WorkflowMeta } from "@aikirun/types/workflow";
-import type { WorkflowRunId } from "@aikirun/types/workflow-run";
+} from "@syi0808/types/subscriber";
+import type { WorkflowMeta } from "@syi0808/types/workflow";
+import type { WorkflowRunId } from "@syi0808/types/workflow-run";
 import { type } from "arktype";
 import { Redis } from "ioredis";
 

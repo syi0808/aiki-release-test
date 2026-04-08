@@ -1,4 +1,4 @@
-import type { RetryStrategy } from "@aikirun/types/retry";
+import type { RetryStrategy } from "@syi0808/types/retry";
 
 import { delay } from "../async/delay";
 

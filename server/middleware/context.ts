@@ -1,5 +1,5 @@
-import type { NamespaceId } from "@aikirun/types/namespace";
-import type { OrganizationId } from "@aikirun/types/organization";
+import type { NamespaceId } from "@syi0808/types/namespace";
+import type { OrganizationId } from "@syi0808/types/organization";
 import type { OrganizationRole } from "server/infra/db/constants/organization";
 import type { Logger } from "server/infra/logger";
 import { ulid } from "ulidx";

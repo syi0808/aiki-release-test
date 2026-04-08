@@ -1,5 +1,5 @@
 {
-	"name": "@aikirun/server",
+	"name": "@syi0808/server",
 	"version": "0.26.0",
 	"private": true,
 	"type": "module",
@@ -14,7 +14,7 @@
 		"db:push": "drizzle-kit push --config infra/db/drizzle.config.ts"
 	},
 	"dependencies": {
-		"@aikirun/types": "workspace:*",
+		"@syi0808/types": "workspace:*",
 		"@orpc/contract": "^1.9.3",
 		"@orpc/server": "^1.9.3",
 		"arktype": "^2.1.29",

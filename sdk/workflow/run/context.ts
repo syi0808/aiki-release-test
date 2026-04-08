@@ -1,10 +1,10 @@
-import type { Duration } from "@aikirun/types/duration";
-import type { Logger } from "@aikirun/types/logger";
-import type { ReplayManifest } from "@aikirun/types/replay-manifest";
-import type { SleepResult } from "@aikirun/types/sleep";
-import { INTERNAL } from "@aikirun/types/symbols";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
-import type { WorkflowRunId, WorkflowStartOptions } from "@aikirun/types/workflow-run";
+import type { Duration } from "@syi0808/types/duration";
+import type { Logger } from "@syi0808/types/logger";
+import type { ReplayManifest } from "@syi0808/types/replay-manifest";
+import type { SleepResult } from "@syi0808/types/sleep";
+import { INTERNAL } from "@syi0808/types/symbols";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
+import type { WorkflowRunId, WorkflowStartOptions } from "@syi0808/types/workflow-run";
 
 import type { EventsDefinition, EventWaiters } from "./event";
 import type { WorkflowRunHandle } from "./handle";

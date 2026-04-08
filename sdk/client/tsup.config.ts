@@ -6,5 +6,5 @@ export default defineConfig({
 	dts: true,
 	clean: true,
 	outDir: "dist",
-	noExternal: ["@aikirun/lib"],
+	noExternal: ["@syi0808/lib"],
 });

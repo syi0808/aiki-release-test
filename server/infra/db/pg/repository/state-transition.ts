@@ -1,7 +1,7 @@
-import type { NonEmptyArray } from "@aikirun/lib/array";
-import type { NamespaceId } from "@aikirun/types/namespace";
-import type { TaskState } from "@aikirun/types/task";
-import { TERMINAL_WORKFLOW_RUN_STATUSES, type WorkflowRunState } from "@aikirun/types/workflow-run";
+import type { NonEmptyArray } from "@syi0808/lib/array";
+import type { NamespaceId } from "@syi0808/types/namespace";
+import type { TaskState } from "@syi0808/types/task";
+import { TERMINAL_WORKFLOW_RUN_STATUSES, type WorkflowRunState } from "@syi0808/types/workflow-run";
 import { and, count, eq, gt, inArray, sql } from "drizzle-orm";
 
 import type { PgDb } from "../provider";

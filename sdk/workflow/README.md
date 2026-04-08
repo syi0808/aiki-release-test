@@ -1,17 +1,17 @@
-# @aikirun/workflow
+# @syi0808/workflow
 
 Workflow and Task SDK for Aiki durable execution platform.
 
 ## Installation
 
 ```bash
-npm install @aikirun/workflow
+npm install @syi0808/workflow
 ```
 
 ## Quick Start
 
 ```typescript
-import { task, workflow } from "@aikirun/workflow";
+import { task, workflow } from "@syi0808/workflow";
 
 // Define tasks
 const sendEmail = task({
@@ -44,7 +44,7 @@ export const onboardingWorkflowV1 = onboardingWorkflow.v("1.0.0", {
 Run with a client:
 
 ```typescript
-import { client } from "@aikirun/client";
+import { client } from "@syi0808/client";
 
 const aikiClient = client({
 	url: "http://localhost:9850",
@@ -63,7 +63,7 @@ const result = await handle.waitForStatus("completed");
 Run workflows on a schedule using cron expressions or intervals:
 
 ```typescript
-import { schedule } from "@aikirun/workflow";
+import { schedule } from "@syi0808/workflow";
 
 const dailyReport = schedule({
 	type: "cron",
@@ -91,8 +91,8 @@ For comprehensive documentation including retry strategies, schema validation, c
 
 ## Related Packages
 
-- [@aikirun/client](https://www.npmjs.com/package/@aikirun/client) - Start workflows
-- [@aikirun/worker](https://www.npmjs.com/package/@aikirun/worker) - Execute workflows
+- [@syi0808/client](https://www.npmjs.com/package/@syi0808/client) - Start workflows
+- [@syi0808/worker](https://www.npmjs.com/package/@syi0808/worker) - Execute workflows
 
 ## License
 

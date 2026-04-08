@@ -1,13 +1,13 @@
-import { getTaskAddress, getWorkflowRunAddress } from "@aikirun/lib/address";
-import { isNonEmptyArray } from "@aikirun/lib/array";
-import { hashInput } from "@aikirun/lib/crypto";
-import { toMilliseconds } from "@aikirun/lib/duration";
-import { propsRequiredNonNull } from "@aikirun/lib/object";
-import type { EventReferenceOptions, EventWaitQueue } from "@aikirun/types/event";
-import type { NamespaceId } from "@aikirun/types/namespace";
-import type { SleepQueue } from "@aikirun/types/sleep";
-import type { TaskInfo, TaskQueue, TaskState, TaskStatus } from "@aikirun/types/task";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
+import { getTaskAddress, getWorkflowRunAddress } from "@syi0808/lib/address";
+import { isNonEmptyArray } from "@syi0808/lib/array";
+import { hashInput } from "@syi0808/lib/crypto";
+import { toMilliseconds } from "@syi0808/lib/duration";
+import { propsRequiredNonNull } from "@syi0808/lib/object";
+import type { EventReferenceOptions, EventWaitQueue } from "@syi0808/types/event";
+import type { NamespaceId } from "@syi0808/types/namespace";
+import type { SleepQueue } from "@syi0808/types/sleep";
+import type { TaskInfo, TaskQueue, TaskState, TaskStatus } from "@syi0808/types/task";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
 import type {
 	ChildWorkflowRunInfo,
 	ChildWorkflowRunQueue,
@@ -19,7 +19,7 @@ import type {
 	WorkflowRunState,
 	WorkflowRunStateCancelled,
 	WorkflowStartOptions,
-} from "@aikirun/types/workflow-run";
+} from "@syi0808/types/workflow-run";
 import type {
 	WorkflowRunCancelByIdsRequestV1,
 	WorkflowRunCreateRequestV1,
@@ -29,7 +29,7 @@ import type {
 	WorkflowRunListTransitionsRequestV1,
 	WorkflowRunReference,
 	WorkflowRunSetTaskStateRequestV1,
-} from "@aikirun/types/workflow-run-api";
+} from "@syi0808/types/workflow-run-api";
 import { NotFoundError, WorkflowRunConflictError } from "server/errors";
 import type {
 	ChildWorkflowRunWaitQueueRow,

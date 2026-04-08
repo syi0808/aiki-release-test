@@ -1,5 +1,5 @@
 {
-	"name": "@aikirun/client",
+	"name": "@syi0808/client",
 	"version": "0.26.0",
 	"description": "Client SDK for Aiki - connect to the server, start workflows, and manage execution",
 	"type": "module",
@@ -18,7 +18,7 @@
 		"build": "tsup"
 	},
 	"dependencies": {
-		"@aikirun/types": "workspace:*",
+		"@syi0808/types": "workspace:*",
 		"@orpc/client": "^1.9.3"
 	},
 	"publishConfig": {

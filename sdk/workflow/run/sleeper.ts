@@ -1,10 +1,10 @@
-import { toMilliseconds } from "@aikirun/lib/duration";
-import type { Duration } from "@aikirun/types/duration";
-import type { Logger } from "@aikirun/types/logger";
-import type { SleepName, SleepResult } from "@aikirun/types/sleep";
-import { INTERNAL } from "@aikirun/types/symbols";
-import type { WorkflowRunId } from "@aikirun/types/workflow-run";
-import { WorkflowRunRevisionConflictError, WorkflowRunSuspendedError } from "@aikirun/types/workflow-run-error";
+import { toMilliseconds } from "@syi0808/lib/duration";
+import type { Duration } from "@syi0808/types/duration";
+import type { Logger } from "@syi0808/types/logger";
+import type { SleepName, SleepResult } from "@syi0808/types/sleep";
+import { INTERNAL } from "@syi0808/types/symbols";
+import type { WorkflowRunId } from "@syi0808/types/workflow-run";
+import { WorkflowRunRevisionConflictError, WorkflowRunSuspendedError } from "@syi0808/types/workflow-run-error";
 
 import type { WorkflowRunHandle } from "./handle";
 

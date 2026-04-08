@@ -1,6 +1,6 @@
-import type { TaskId, TaskName, TaskStatus } from "@aikirun/types/task";
-import type { WorkflowName, WorkflowVersionId } from "@aikirun/types/workflow";
-import type { WorkflowRunId, WorkflowRunStatus } from "@aikirun/types/workflow-run";
+import type { TaskId, TaskName, TaskStatus } from "@syi0808/types/task";
+import type { WorkflowName, WorkflowVersionId } from "@syi0808/types/workflow";
+import type { WorkflowRunId, WorkflowRunStatus } from "@syi0808/types/workflow-run";
 
 export class NotFoundError extends Error {
 	constructor(message: string) {

@@ -1,14 +1,14 @@
-import { isNonEmptyArray } from "@aikirun/lib/array";
-import { getRetryParams } from "@aikirun/lib/retry";
-import type { ApiClient } from "@aikirun/types/client";
+import { isNonEmptyArray } from "@syi0808/lib/array";
+import { getRetryParams } from "@syi0808/lib/retry";
+import type { ApiClient } from "@syi0808/types/client";
 import type {
 	CreateSubscriber,
 	Subscriber,
 	SubscriberContext,
 	SubscriberDelayParams,
 	WorkflowRunBatch,
-} from "@aikirun/types/subscriber";
-import type { WorkflowRunId } from "@aikirun/types/workflow-run";
+} from "@syi0808/types/subscriber";
+import type { WorkflowRunId } from "@syi0808/types/workflow-run";
 
 export interface HttpSubscriberParams {
 	api: ApiClient;

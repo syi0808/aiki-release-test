@@ -1,15 +1,15 @@
-import { toMilliseconds } from "@aikirun/lib/duration";
-import type { Client } from "@aikirun/types/client";
-import type { DurationObject } from "@aikirun/types/duration";
-import type { Logger } from "@aikirun/types/logger";
-import { INTERNAL } from "@aikirun/types/symbols";
+import { toMilliseconds } from "@syi0808/lib/duration";
+import type { Client } from "@syi0808/types/client";
+import type { DurationObject } from "@syi0808/types/duration";
+import type { Logger } from "@syi0808/types/logger";
+import { INTERNAL } from "@syi0808/types/symbols";
 import {
 	type ChildWorkflowRunWaitQueue,
 	isTerminalWorkflowRunStatus,
 	type TerminalWorkflowRunStatus,
 	type WorkflowRun,
-} from "@aikirun/types/workflow-run";
-import { WorkflowRunRevisionConflictError, WorkflowRunSuspendedError } from "@aikirun/types/workflow-run-error";
+} from "@syi0808/types/workflow-run";
+import { WorkflowRunRevisionConflictError, WorkflowRunSuspendedError } from "@syi0808/types/workflow-run-error";
 
 import type { WorkflowRunContext } from "./context";
 import type { EventsDefinition } from "./event";

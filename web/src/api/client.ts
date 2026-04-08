@@ -1,10 +1,10 @@
-import type { ApiKeyApi } from "@aikirun/types/api-key-api";
-import type { NamespaceApi } from "@aikirun/types/namespace-api";
-import type { ScheduleApi } from "@aikirun/types/schedule-api";
-import type { WorkflowApi } from "@aikirun/types/workflow-api";
-import type { WorkflowRunApi } from "@aikirun/types/workflow-run-api";
 import { createORPCClient } from "@orpc/client";
 import { RPCLink } from "@orpc/client/fetch";
+import type { ApiKeyApi } from "@syi0808/types/api-key-api";
+import type { NamespaceApi } from "@syi0808/types/namespace-api";
+import type { ScheduleApi } from "@syi0808/types/schedule-api";
+import type { WorkflowApi } from "@syi0808/types/workflow-api";
+import type { WorkflowRunApi } from "@syi0808/types/workflow-run-api";
 
 const AIKI_SERVER_URL = import.meta.env.VITE_AIKI_SERVER_URL || "http://localhost:9850";
 

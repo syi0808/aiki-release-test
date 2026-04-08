@@ -5,8 +5,8 @@ A worker executes your workflows. It runs in your infrastructure, subscribes to 
 ## Creating a Worker
 
 ```typescript
-import { client } from "@aikirun/client";
-import { worker } from "@aikirun/worker";
+import { client } from "@syi0808/client";
+import { worker } from "@syi0808/worker";
 import { orderWorkflowV1, userWorkflowV1 } from "./workflows";
 
 const aikiClient = client({
@@ -75,7 +75,7 @@ Worker configuration is split between **params** (identity) and **options** (tun
 |-------|-------------|
 | `name` | Unique worker identifier |
 | `workflows` | Workflow versions this worker executes |
-| `subscriber` | Optional subscriber factory for work discovery (default: DB polling). Use `redisSubscriber()` from `@aikirun/redis` for lower-latency delivery |
+| `subscriber` | Optional subscriber factory for work discovery (default: DB polling). Use `redisSubscriber()` from `@syi0808/redis` for lower-latency delivery |
 
 **Options** are passed via `options` param or `with()` builder:
 
@@ -88,14 +88,14 @@ Worker configuration is split between **params** (identity) and **options** (tun
 
 ## Pluggable Subscribers
 
-Workers use DB polling by default, which requires no additional setup beyond the Aiki server connection. For lower-latency work discovery, install `@aikirun/redis`:
+Workers use DB polling by default, which requires no additional setup beyond the Aiki server connection. For lower-latency work discovery, install `@syi0808/redis`:
 
 ```bash
-npm install @aikirun/redis
+npm install @syi0808/redis
 ```
 
 ```typescript
-import { redisSubscriber } from "@aikirun/redis";
+import { redisSubscriber } from "@syi0808/redis";
 
 const aikiWorker = worker({
   workflows: [orderWorkflowV1],
@@ -103,7 +103,7 @@ const aikiWorker = worker({
 });
 ```
 
-You can also implement your own subscriber by providing a function that matches the `CreateSubscriber` type from `@aikirun/types/subscriber`.
+You can also implement your own subscriber by providing a function that matches the `CreateSubscriber` type from `@syi0808/types/subscriber`.
 
 ## Next Steps
 

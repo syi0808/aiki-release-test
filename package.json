@@ -1,5 +1,5 @@
 {
-	"name": "aiki",
+	"name": "@syi0808/aiki",
 	"private": true,
 	"type": "module",
 	"workspaces": [
@@ -29,9 +29,9 @@
 		"server": "bun run server/index.ts",
 		"server:watch": "bun --watch run server/index.ts",
 		"web": "bun run --cwd web dev",
-		"changeset": "changeset",
-		"bump": "changeset version && find . -path ./node_modules -prune -o -path ./CHANGELOG.md -prune -o -name CHANGELOG.md -print -exec rm {} + && rm bun.lock && bun install && bun run lint:fix",
+		"changeset": "pubm changesets add",
 		"clean": "rm -rf types/dist lib/dist server/dist sdk/*/dist",
+		"build": "bun run build:types && bun run build:lib && bun run build:sdk",
 		"build:types": "bun run --cwd types build",
 		"build:lib": "bun run --cwd lib build",
 		"build:sdk": "bun run --cwd sdk/workflow build && bun run --cwd sdk/client build && bun run --cwd sdk/transport/http build && bun run --cwd sdk/transport/redis build && bun run --cwd sdk/worker build && bun run --cwd sdk/endpoint build",
@@ -40,8 +40,7 @@
 		"docker:up": "docker compose up -d",
 		"docker:down": "docker compose down",
 		"docker:logs": "docker compose logs -f",
-		"release": "bun run build:types && bun run build:lib && bun run build:sdk && bun run release:publish && git tag v$(bun -e \"console.log(require('./types/package.json').version)\") && git push && git push --tags",
-		"release:publish": "for pkg in types sdk/workflow sdk/client sdk/transport/redis sdk/worker sdk/endpoint; do (cd $pkg && bun publish --access public) || true; done",
+		"release": "pubm",
 		"prepare": "husky"
 	},
 	"lint-staged": {
@@ -51,11 +50,11 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.10",
-		"@changesets/cli": "^2.27.1",
 		"@types/node": "^22.10.2",
 		"bun-types": "^1.1.38",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.7",
+		"pubm": "^0.5.2",
 		"tsup": "^8.5.1",
 		"typescript": "^5.7.2"
 	}

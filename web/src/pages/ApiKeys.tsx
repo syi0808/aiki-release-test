@@ -1,4 +1,4 @@
-import type { ApiKeyInfo, ApiKeyStatus } from "@aikirun/types/api-key-api";
+import type { ApiKeyInfo, ApiKeyStatus } from "@syi0808/types/api-key-api";
 import { useQueryClient } from "@tanstack/react-query";
 import { useEffect, useRef, useState } from "react";
 
@@ -143,7 +143,7 @@ export function ApiKeys() {
 						overflowX: "auto",
 						lineHeight: 1.6,
 					}}
-				>{`import { client } from "@aikirun/client";
+				>{`import { client } from "@syi0808/client";
 
 const aikiClient = client({
   url: "http://localhost:9850",

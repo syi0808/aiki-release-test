@@ -1,5 +1,5 @@
-import { delay } from "@aikirun/lib/async";
-import { schedule } from "@aikirun/workflow";
+import { delay } from "@syi0808/lib/async";
+import { schedule } from "@syi0808/workflow";
 
 import { runWithWorker } from "../shared/worker";
 import { notify } from "../workflows/notify";

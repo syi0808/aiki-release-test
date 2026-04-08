@@ -1,4 +1,4 @@
-import { event, task, workflow } from "@aikirun/workflow";
+import { event, task, workflow } from "@syi0808/workflow";
 
 /**
  * Demonstrates durable sleep and human-in-the-loop approval via events.

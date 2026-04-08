@@ -1,4 +1,4 @@
-import { event, workflow } from "@aikirun/workflow";
+import { event, workflow } from "@syi0808/workflow";
 
 export const echoV1 = workflow({ name: "echo" }).v("1.0.0", {
 	async handler(run) {
