@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.26.1
+
+### Patch Changes
+
+- for test
+- for test
+- for test
+- for test
+- for test
+- for test
+
 All notable changes to Aiki packages are documented here. All `@syi0808/*` packages share the same version number and are released together.
 
 ## 0.26.0
