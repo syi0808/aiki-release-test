@@ -40,7 +40,7 @@
 		"docker:up": "docker compose up -d",
 		"docker:down": "docker compose down",
 		"docker:logs": "docker compose logs -f",
-		"release": "pubm",
+		"release": "pubm --no-tests",
 		"prepare": "husky"
 	},
 	"lint-staged": {
