@@ -1,6 +1,6 @@
 {
 	"name": "@syi0808/types",
-	"version": "0.26.1",
+	"version": "0.26.2",
 	"description": "Core type definitions for Aiki - including workflow, task, client, and trigger types",
 	"type": "module",
 	"exports": {
