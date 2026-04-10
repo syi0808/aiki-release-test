@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.26.6
+
+### Patch Changes
+
+- test
+
 ## 0.26.5
 
 ### Patch Changes

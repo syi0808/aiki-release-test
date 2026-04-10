@@ -1,6 +1,6 @@
 {
 	"name": "@syi0808/redis",
-	"version": "0.26.5",
+	"version": "0.26.6",
 	"description": "Redis transport for Aiki - high-performance work discovery via Redis Streams",
 	"type": "module",
 	"main": "./dist/index.js",
